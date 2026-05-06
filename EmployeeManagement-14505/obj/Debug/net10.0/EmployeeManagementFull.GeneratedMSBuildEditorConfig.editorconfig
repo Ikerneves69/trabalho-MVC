@@ -19,65 +19,65 @@ build_property.TargetFrameworkIdentifier = .NETCoreApp
 build_property.TargetFrameworkVersion = v10.0
 build_property.RootNamespace = EmployeeManagementFull
 build_property.RootNamespace = EmployeeManagementFull
-build_property.ProjectDir = /home/arch/Documents/EmployeeManagementFull/
+build_property.ProjectDir = /workspaces/trabalho-MVC/EmployeeManagement-14505/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/arch/Documents/EmployeeManagementFull
+build_property.MSBuildProjectDirectory = /workspaces/trabalho-MVC/EmployeeManagement-14505
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[/home/arch/Documents/EmployeeManagementFull/Views/Employees/Create.cshtml]
+[/workspaces/trabalho-MVC/EmployeeManagement-14505/Views/Employees/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVzL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/arch/Documents/EmployeeManagementFull/Views/Employees/Delete.cshtml]
+[/workspaces/trabalho-MVC/EmployeeManagement-14505/Views/Employees/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVzL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/arch/Documents/EmployeeManagementFull/Views/Employees/Details.cshtml]
+[/workspaces/trabalho-MVC/EmployeeManagement-14505/Views/Employees/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVzL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/arch/Documents/EmployeeManagementFull/Views/Employees/Edit.cshtml]
+[/workspaces/trabalho-MVC/EmployeeManagement-14505/Views/Employees/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVzL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/arch/Documents/EmployeeManagementFull/Views/Employees/Index.cshtml]
+[/workspaces/trabalho-MVC/EmployeeManagement-14505/Views/Employees/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/arch/Documents/EmployeeManagementFull/Views/Home/Index.cshtml]
+[/workspaces/trabalho-MVC/EmployeeManagement-14505/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/arch/Documents/EmployeeManagementFull/Views/Home/Privacy.cshtml]
+[/workspaces/trabalho-MVC/EmployeeManagement-14505/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/arch/Documents/EmployeeManagementFull/Views/Shared/Error.cshtml]
+[/workspaces/trabalho-MVC/EmployeeManagement-14505/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/arch/Documents/EmployeeManagementFull/Views/Shared/_LoginPartial.cshtml]
+[/workspaces/trabalho-MVC/EmployeeManagement-14505/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/arch/Documents/EmployeeManagementFull/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/workspaces/trabalho-MVC/EmployeeManagement-14505/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/arch/Documents/EmployeeManagementFull/Views/_ViewImports.cshtml]
+[/workspaces/trabalho-MVC/EmployeeManagement-14505/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/arch/Documents/EmployeeManagementFull/Views/_ViewStart.cshtml]
+[/workspaces/trabalho-MVC/EmployeeManagement-14505/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/arch/Documents/EmployeeManagementFull/Views/Shared/_Layout.cshtml]
+[/workspaces/trabalho-MVC/EmployeeManagement-14505/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-s4wdf9g9fn
