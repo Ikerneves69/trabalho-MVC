@@ -1,32 +1,32 @@
 # trabalho-MVC
 
-Mini tutorial ASP.NET MVC pelo terminal
-1. Instalar o scaffolding
-
-Isto instala a ferramenta que gera controllers e views automaticamente.
-
-dotnet tool install -g dotnet-aspnet-codegenerator-tool
-
-Adicionar o package ao projeto:
-
-dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
-2. Criar um projeto MVC
+ASP.NET Core MVC — Mini Guia
+Criar Projeto MVC
 dotnet new mvc -n MeuProjeto
 cd MeuProjeto
 
-Isto cria:
+Cria automaticamente:
 
-pasta Controllers
-pasta Views
-pasta Models
+Controllers
+Views
+Models
 configuração MVC completa
-3. Criar um Model
+Instalar Ferramentas de Scaffolding
+Instalar code generator
+dotnet tool install -g dotnet-aspnet-codegenerator-tool
+Adicionar package ao projeto
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
 
-Cria um ficheiro:
+O scaffolding gera:
+
+Controllers
+Views
+CRUD completo
+integração com Entity Framework
+Criar um Model
+Exemplo
 
 Models/Product.cs
-
-Exemplo:
 
 namespace MeuProjeto.Models;
 
@@ -36,19 +36,18 @@ public class Product
     public string Name { get; set; }
     public decimal Price { get; set; }
 }
+O que é um Model?
 
-O Model representa dados da aplicação.
+O Model representa os dados da aplicação.
 
-4. Criar DbContext (Entity Framework)
-
-Instalar EF Core:
-
+Configurar Entity Framework
+Instalar packages
 dotnet add package Microsoft.EntityFrameworkCore.Sqlite
 dotnet add package Microsoft.EntityFrameworkCore.Design
-
-Criar:
+Criar DbContext
 
 Data/AppDbContext.cs
+
 using Microsoft.EntityFrameworkCore;
 using MeuProjeto.Models;
 
@@ -63,45 +62,51 @@ public class AppDbContext : DbContext
 
     public DbSet<Product> Products { get; set; }
 }
-5. Registrar no Program.cs
+O que é o DbContext?
 
-Adicionar:
+O DbContext faz a ligação entre:
+
+a aplicação
+e a base de dados
+Registrar o DbContext
+Program.cs
+using MeuProjeto.Data;
+using Microsoft.EntityFrameworkCore;
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite("Data Source=app.db"));
-
-e no topo:
-
-using MeuProjeto.Data;
-using Microsoft.EntityFrameworkCore;
-6. Criar migrations
-
-Instalar ferramenta:
-
+Criar Base de Dados
+Instalar ferramenta EF
 dotnet tool install --global dotnet-ef
-
-Criar DB:
-
+Criar migration
 dotnet ef migrations add InitialCreate
+Atualizar base de dados
 dotnet ef database update
-7. Gerar Controller + Views automaticamente
-dotnet aspnet-codegenerator controller -name ProductsController -m Product -dc AppDbContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries
-
-Isto cria automaticamente:
-
+Gerar Controller + Views Automaticamente
+dotnet aspnet-codegenerator controller \
+-name ProductsController \
+-m Product \
+-dc AppDbContext \
+--relativeFolderPath Controllers \
+--useDefaultLayout \
+--referenceScriptLibraries
+O que este comando cria?
 Controller
 Controllers/ProductsController.cs
+
+Responsável pela lógica da aplicação.
+
 Views CRUD
 Views/Products/
 
-com:
+Inclui:
 
 Create
 Edit
 Delete
 Details
 Index
-8. Executar projeto
+Executar Projeto
 dotnet run
 
 Abrir:
@@ -111,32 +116,35 @@ http://localhost:5000
 ou:
 
 https://localhost:5001
-O que cada coisa faz
+Hot Reload
+dotnet watch run
+
+Atualiza automaticamente quando guardas ficheiros.
+
+Estrutura MVC
 Pasta	Função
-Models	Estrutura dos dados
-Views	Interface HTML
+Models	Dados da aplicação
+Views	Interface visual
 Controllers	Lógica da aplicação
-Data	Ligação à base de dados
+Data	Base de dados
 Fluxo MVC
-
 Utilizador → Controller → Model → View → Utilizador
+Criar Controller Vazio
+dotnet aspnet-codegenerator controller \
+-name HomeController \
+--relativeFolderPath Controllers
+Criar API Controller
+dotnet aspnet-codegenerator controller \
+-name ApiController \
+-api
+Criar View Manualmente
+Exemplo
 
-MVC significa:
-
-Model = dados
-View = interface
-Controller = lógica
-Criar controller vazio
-dotnet aspnet-codegenerator controller -name HomeController --relativeFolderPath Controllers
-Criar API controller
-dotnet aspnet-codegenerator controller -name ApiController -api
-Criar View manualmente
 Views/Home/Index.cshtml
 
-Exemplo:
-
 <h1>Olá MVC</h1>
-Retornar uma view no controller
+Retornar uma View
+Exemplo Controller
 public IActionResult Index()
 {
     return View();
@@ -145,7 +153,3 @@ public IActionResult Index()
 O MVC procura automaticamente:
 
 Views/Home/Index.cshtml
-Hot Reload
-dotnet watch run
-
-Atualiza automaticamente ao guardar ficheiros.
